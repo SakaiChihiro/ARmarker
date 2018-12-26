@@ -1,0 +1,180 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<script src="./AR.js/aframe/build/aframe-ar.js"> </script>
+<script src="./AR.js/three.js/src/threex/threex-armarkercontrols.js"></script>
+
+
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='debugUIEnabled:false;'>
+      <a-assets>
+	<a-asset-item id="3DModel" src="NOVELO_DOLPHIN.obj"></a-asset-item>
+	<a-asset-item id="Material" src="NOVELO_DOLPHIN.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-marker type="pattern" url="note0-0-0.patt">
+	<a-text value='event.data.marker.cfPat' position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="heart.patt">
+	<a-text value="heart OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="star.patt">
+	<a-text value="star OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="windmill.patt">
+	<a-text value="windmill OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="AR.patt">
+	<a-text value="AR OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="markers1.patt">
+	<a-text value="markers1 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="heart&star.patt">
+	<a-text value="heart&star OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="heart&note.patt">
+	<a-text value="heart&note OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="heart-star.patt">
+	<a-text value="heart-star OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="heart-note.patt">
+	<a-text value="heart-note OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <!--<a-marker type="pattern" url="note255-0-0.patt">
+	<a-text value="note255-0-0 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>-->
+
+       <!--<a-marker type="pattern" url="base255-110-110.patt">
+	<a-text value="base255-110-110 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="note255-110-110.patt">
+	<a-text value="note255-110-110 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="base255-0-0.patt">
+	<a-text value="base255-0-0 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="note255-64-64.patt">
+	<a-text value="note255-64-64 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="base255-64-64.patt">
+	<a-text value="base255-0-0 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>-->
+
+
+      <a-marker type="pattern" url="pattern-marker3.patt">
+	<a-text value="Welocome to \nHibikino!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="manhole.patt">
+	<a-text value="manhole OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="checkpoint.patt">
+	<a-text value="N133" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="q1.patt">
+	<a-text value="Answer:K" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="q2.patt">
+	<a-text value="Answer:S" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#00FFFF">
+	</a-text>
+      </a-marker>
+
+
+      <a-marker type="pattern" url="q3.patt">
+	<a-obj-model src="#3DModel"
+		     mtl="#Material"
+		     scale="0.0005 0.0005 0.0005"
+		     position="0 0.5 0">
+	</a-obj-model>
+	<a-text value="Answer:IRUKA" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#AC58FA">
+        </a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c1.patt">
+	<a-text value="70%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c2.patt">
+	<a-text value="40%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c3.patt">
+	<a-text value="10%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c4.patt">
+	<a-text value="90%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c5.patt">
+	<a-text value="90%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c6.patt">
+	<a-text value="5%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c7.patt">
+	<a-text value="30%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+      <a-marker type="pattern" url="c8.patt">
+	<a-text value="60%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
+	</a-text>
+      </a-marker>
+
+
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+
+
+  </body>
+</html>
